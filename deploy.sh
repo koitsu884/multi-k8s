@@ -5,7 +5,6 @@ docker build -t kazu884/multi-docker-worker:latest -t kazu884/multi-docker-worke
 docker push kazu884/multi-docker-client:latest
 docker push kazu884/multi-docker-server:latest
 docker push kazu884/multi-docker-worker:latest
-
 docker push kazu884/multi-docker-client:$SHA
 docker push kazu884/multi-docker-server:$SHA
 docker push kazu884/multi-docker-worker:$SHA
