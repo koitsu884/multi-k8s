@@ -10,7 +10,7 @@ docker push kazu884/multi-docker-client:$SHA
 docker push kazu884/multi-docker-server:$SHA
 docker push kazu884/multi-docker-worker:$SHA
 
-kubectl apply -f k8s
+kubectl apply -f ./k8s
 kubectl set image deployments/client-deployment client=kazu884/multi-docker-client:$SHA
 kubectl set image deployments/server-deployment server=kazu884/multi-docker-server:$SHA
 kubectl set image deployments/worker-deployment worker=kazu884/multi-docker-worker:$SHA
